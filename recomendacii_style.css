@@ -1,0 +1,104 @@
+body {
+  background: linear-gradient(to right, #4e29aaff, #1e123dff);
+}
+.row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px;
+    }
+
+    .audio-button {
+      flex: 1;
+      margin-right: 50px;
+      margin-bottom: 20px;
+      padding: 50px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 25px;
+      font-weight: bold;
+      color: #fff;
+      max-width: 300px;
+    }
+
+    .blue {
+      font-family: Cursive;
+      background-color: #fde599;
+      color:black;
+    }
+
+    .green {
+      font-family: Cursive;
+      background-color: #e16666;
+    }
+
+    .orange {
+      font-family: Cursive;
+      background-color: #b6d7a8;
+      color:black;
+    }
+
+    .purple {
+      font-family: Cursive;
+      background-color: #b4a7d6;
+      color:black;
+    }
+
+    .pink {
+      font-family: Cursive;
+      background-color: #a4c2f4;
+      color:black;
+    }
+
+    .yellow {
+      font-family: Cursive;
+      background-color: #d5a6bd;
+      color:black;
+    }
+
+    .audio-button:last-child {
+      margin-right: 0;
+    }
+
+    .audio-button:hover {
+      opacity: 0.8;
+    }
+
+    @media screen and (max-width: 600px) {
+      .row {
+        flex-wrap: wrap;
+      }
+
+      .audio-button {
+        flex: 0 0 100%;
+        margin-right: 0;
+      }
+    } 
+  }
+
+        .button-wrapper {
+            text-align: center;
+            margin-top: 20px;
+        
+        }
+
+        .custom-button {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #fde599;
+            color: black;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+           
+        }
+
+        .custom-button:hover {
+            background-color: #00cc00;
+        }
+ 
+

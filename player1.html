@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя вебсторінка з плеєром</title>
+    <style>
+              body {
+  background: linear-gradient(to right, #4e29aaff, #1e123dff);
+}
+        .player-wrapper {
+            max-width: 100%;
+            position: relative;
+            padding-bottom: 100%; /* Зберігаємо пропорції 16:9 */
+            height: 0;
+        }
+
+        .player-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .button-wrapper {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .custom-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fde599;
+            color: black;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .custom-button:hover {
+            background-color: #00cc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="player-wrapper">
+        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1787675329&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" scrolling="no" frameborder="no" allow="autoplay"></iframe>
+    </div>
+    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+        <a href="https://soundcloud.com/dreamy-03" title="Dreamy" target="_blank" style="color: #cccccc; text-decoration: none;">Dreamy</a> · 
+        <a href="https://soundcloud.com/dreamy-03/dlya-garnogo-pochatku-dnya" title="Для гарного початку дня" target="_blank" style="color: #cccccc; text-decoration: none;">Для гарного початку дня</a>
+    </div>
+
+    <div class="button-wrapper">
+        <button class="custom-button" onclick="goBack()">Повернутися на попередню</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "recomendacii.html";  // Замініть "https://www.example.com" на URL потрібної веб-сторінки
+        }
+    </script>
+</body>
+</html>
